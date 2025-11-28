@@ -4,18 +4,18 @@ import router from './routes/index.js';
 
 
 //Configuramos la base de datos
-import db from './config/db.js';
+
 
 //conectar la base de datos
-db.authenticate()
-    .then( () => console.log('Base de datos conectada'))
-    .catch( error => console.log(error));
+//db.authenticate()
+   // .then( () => console.log('Base de datos conectada'))
+    //.catch( error => console.log(error));
 
-const app = express();
+//const app = express();
 
-app.use(express.urlencoded({ extended: true }));
+//app.use(express.urlencoded({ extended: true }));
 
-const port = process.env.PORT || 3000;
+//const port = process.env.PORT || 3000;
 
 
 /*app.get ('/', (req, res ) => {
@@ -40,9 +40,9 @@ app.use('/', router);
 //Definir la carpeta publica
 
 
-app.listen(port, () => {
-    console.log(`El servidor está funcionando en el puerto ${port}`);
-});
+//app.listen(port, () => {
+    //console.log(`El servidor está funcionando en el puerto ${port}`);
+//});
 
 
 
