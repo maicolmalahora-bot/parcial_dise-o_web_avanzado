@@ -15,42 +15,77 @@ block contenido
 
                 p Nuestra actividad económica se enfoca en la distribución de hardware de alto rendimiento como procesadores, tarjetas gráficas, almacenamiento y periféricos gaming, ofreciendo productos que mejoran la productividad y experiencia del usuario; brindamos asesoramiento técnico personalizado para optimizar costos sin comprometer calidad, y fortalecemos el comercio electrónico mediante una plataforma segura con envíos eficientes a nivel nacional.
 
-    section.scratch-game.mt-5.mb-5
-    .container
-    h2.text-center.mb-4 Juego Interactivo Scratch
-    .row.justify-content-center
-        .col-md-8
-        .scratch-container
-            iframe(
-            src= "https://scratch.mit.edu/projects/1180535402/embed"
-            allowtransparency="true"
-            width="700"
-            height="600"
-            frameborder="0"
-            scrolling="no"
-            allowfullscreen
-            )
-        p.text-center.mt-3 
-            | ¡Controla el juego con tu teclado! 
-            a(href="https://scratch.mit.edu/projects/1180535402/embed" target="_blank") Ver en Scratch
-    .appinventor-apk.container
-    .row.justify-content-center.align-items-center
-    .col-md-20.d-flex.flex-column.align-items-center.text-center
-        h3 Instala la app de app inventor en tu móvil
-        a.btn.btn-primary.mt-3(href="juegos/Informativo_MyM_Tech.apk" download) Descargar APK
-    .col-md-20.d-flex.justify-content-center
-        img(src="img/QRjuego.jpg" alt="Captura del juego" class="img-fluid")
+    //- Nueva Sección de Misión, Visión y Objetivos
+    .container.mt-5
+        .row.mb-5.mt-5
+            .col-md-6
+                .card.bg-light.p-4
+                    h3.text-center.mb-4 NUESTRA MISIÓN
+                    p.text-justify Proveer tecnología de vanguardia con los más altos estándares de calidad, acompañada de un servicio personalizado y garantías extendidas, para potenciar la productividad y el entretenimiento de nuestros clientes.
+                    p.text-justify Nos comprometemos a democratizar el acceso a hardware avanzado, asegurando confiabilidad, rendimiento y soporte técnico especializado.
+            .col-md-6
+                .card.bg-light.p-4
+                    h3.text-center.mb-4 NUESTRA VISIÓN
+                    p.text-justify Ser el referente número uno en venta de componentes tecnológicos en [país/región] para 2030, reconocidos por nuestra innovación, ética comercial y compromiso con la satisfacción del cliente.
+                    p.text-justify Aspiramos a expandirnos globalmente, manteniendo nuestra esencia: tecnología accesible, comunidad educada y soluciones sostenibles.
 
-    container
-    .row.justify-content-center.align-items-center
-    .col-md-20.d-flex.flex-column.align-items-center.text-center
-        h3 También tenemos un kahoot para ti!!
-        a.btn.btn-primary.mt-3(href="https://kahoot.it/challenge/07607988?challenge-id=3fbf2858-87e5-4083-9839-7ef814672b5a_1748886719147") Ir al Kahoot
-    .col-md-20.d-flex.justify-content-center
-        img(src="img/QRkahoot.jpg" alt="Captura del juego" style="width: 150px;" class="img-fluid")
+        //- Nueva Sección de Objetivos
+        section.objetivos.mt-5
+            h2.text-center.mb-5 NUESTROS OBJETIVOS
+            .row
+                .col-md-4.mb-4
+                    .card.h-100.border-0.shadow-sm
+                        .card-body.text-center.p-4
+                            svg.icon-tabler.icon-tabler-checkbox(xmlns='http://www.w3.org/2000/svg' width='48' height='48' viewBox='0 0 24 24' stroke-width='1.5' stroke='#dc135f' fill='none')
+                                path(stroke='none' d='M0 0h24v24H0z' fill='none')
+                                path(d='M9 11l3 3l8 -8')
+                                path(d='M20 12v6a2 2 0 0 1 -2 2h-12a2 2 0 0 1 -2 -2v-12a2 2 0 0 1 2 -2h9')
+                            h4.mt-3 Calidad Garantizada
+                            p Ofrecer productos con pruebas rigurosas y garantías reales.
+                
+                .col-md-4.mb-4
+                    .card.h-100.border-0.shadow-sm
+                        .card-body.text-center.p-4
+                            svg.icon-tabler.icon-tabler-currency-dollar(xmlns='http://www.w3.org/2000/svg' width='48' height='48' viewBox='0 0 24 24' stroke-width='1.5' stroke='#dc135f' fill='none')
+                                path(stroke='none' d='M0 0h24v24H0z' fill='none')
+                                path(d='M16.7 8a3 3 0 0 0 -2.7 -2h-4a3 3 0 0 0 0 6h4a3 3 0 0 1 0 6h-4a3 3 0 0 1 -2.7 -2')
+                                path(d='M12 3v3m0 12v3')
+                            h4.mt-3 Precios Competitivos
+                            p Mantener las mejores relaciones costo-beneficio del mercado.
+                
+                .col-md-4.mb-4
+                    .card.h-100.border-0.shadow-sm
+                        .card-body.text-center.p-4
+                            svg.icon-tabler.icon-tabler-headset(xmlns='http://www.w3.org/2000/svg' width='48' height='48' viewBox='0 0 24 24' stroke-width='1.5' stroke='#dc135f' fill='none')
+                                path(stroke='none' d='M0 0h24v24H0z' fill='none')
+                                path(d='M4 14v-3a8 8 0 1 1 16 0v3')
+                                path(d='M18 19a3 3 0 0 1 -3 3h-6a3 3 0 0 1 -3 -3')
+                                path(d='M21 14a2 2 0 0 1 -2 2h-1a2 2 0 0 1 -2 -2v-3a2 2 0 0 1 2 -2h3z')
+                                path(d='M3 14a2 2 0 0 0 2 2h1a2 2 0 0 0 2 -2v-3a2 2 0 0 0 -2 -2h-3z')
+                            h4.mt-3 Soporte Integral
+                            p Asesoría técnica pre y postventa, con respuestas en menos de 24 horas.
 
-
-
+            .row.mt-3
+                .col-md-4.mb-4
+                    .card.h-100.border-0.shadow-sm
+                        .card-body.text-center.p-4
+                            svg.icon-tabler.icon-tabler-innovation(xmlns='http://www.w3.org/2000/svg' width='48' height='48' viewBox='0 0 24 24' stroke-width='1.5' stroke='#dc135f' fill='none')
+                                path(stroke='none' d='M0 0h24v24H0z' fill='none')
+                                path(d='M3 21h9l-3 -7v-5h5l3 -7h-9l3 7v5h-5z')
+                            h4.mt-3 Innovación Constante
+                            p Actualizar nuestro catálogo con los últimos lanzamientos mundiales.
+                
+                .col-md-4.mb-4
+                    .card.h-100.border-0.shadow-sm
+                        .card-body.text-center.p-4
+                            svg.icon-tabler.icon-tabler-heart-handshake(xmlns='http://www.w3.org/2000/svg' width='48' height='48' viewBox='0 0 24 24' stroke-width='1.5' stroke='#dc135f' fill='none')
+                                path(stroke='none' d='M0 0h24v24H0z' fill='none')
+                                path(d='M19.5 12.572l-7.5 7.428l-7.5 -7.428a5 5 0 1 1 7.5 -6.566a5 5 0 1 1 7.5 6.572')
+                                path(d='M12 6l-3.293 3.293a1 1 0 0 0 0 1.414l.543 .543c.69 .69 1.81 .69 2.5 0l1 -1a3.182 3.182 0 0 1 4.5 0l2.25 2.25')
+                                path(d='M12.5 15.5l2 2')
+                                path(d='M15 13l2 2')
+                            h4.mt-3 Impacto Social
+                            p Donar equipos reacondicionados a instituciones educativas.
 
     .listado-iconos
         .container.mt-5.py-5.text-center
@@ -99,7 +134,7 @@ block contenido
                                     path(stroke='none' d='M0 0h24v24H0z' fill='none')
                                     path(d='M9 11a3 3 0 1 0 6 0a3 3 0 0 0 -6 0')
                                     path(d='M17.657 16.657l-4.243 4.243a2 2 0 0 1 -2.827 0l-4.244 -4.243a8 8 0 1 1 11.314 0z')
-                                span.ms-3 CLL 38 #18-60, Bucaramanga, Colombia
+                                span.ms-3 Cra 18 #33-39, Bucaramanga, Colombia
                 
                 .col-md-6
                     form.form-contacto.p-4.bg-white.rounded

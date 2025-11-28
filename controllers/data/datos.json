@@ -1,0 +1,70 @@
+{
+  "viajes": [
+    {
+      "id": 1,
+      "titulo": "Viaje a la Playa",
+      "precio": "299.99",
+      "garantia": "Mejor Precio Garantizado",
+      "imagen": "destino_1",
+      "descripcion": "Disfruta de unas vacaciones inolvidables en la playa",
+      "disponibles": 10,
+      "slug": "viaje-playa"
+    },
+    {
+      "id": 2,
+      "titulo": "Tour por Europa", 
+      "precio": "899.99",
+      "garantia": "Experiencia Garantizada",
+      "imagen": "destino_2",
+      "descripcion": "Recorre los mejores países de Europa",
+      "disponibles": 5,
+      "slug": "tour-europa"
+    },
+    {
+      "id": 3,
+      "titulo": "Aventura en Montaña",
+      "precio": "199.99",
+      "garantia": "Seguro Incluido", 
+      "imagen": "destino_3",
+      "descripcion": "Experiencia extrema en la montaña",
+      "disponibles": 8,
+      "slug": "aventura-montana"
+    },
+    {
+      "id": 4,
+      "titulo": "Ciudad Histórica",
+      "precio": "399.99",
+      "garantia": "Cultura Garantizada",
+      "imagen": "destino_4", 
+      "descripcion": "Explora ciudades llenas de historia y cultura",
+      "disponibles": 7,
+      "slug": "ciudad-historica"
+    }
+  ],
+  "testimoniales": [
+    {
+      "id": 1,
+      "nombre": "María González",
+      "correo": "maria@email.com",
+      "mensaje": "Excelente servicio, todo perfecto. Las playas eran increíbles!"
+    },
+    {
+      "id": 2, 
+      "nombre": "Carlos López",
+      "correo": "carlos@email.com",
+      "mensaje": "Muy profesionales, los recomiendo. El tour por Europa superó mis expectativas."
+    },
+    {
+      "id": 3,
+      "nombre": "Ana Martínez", 
+      "correo": "ana@email.com",
+      "mensaje": "Las mejores vacaciones de mi vida. La aventura en montaña fue espectacular."
+    },
+    {
+      "id": 4,
+      "nombre": "Juan Pérez",
+      "correo": "juan@email.com", 
+      "mensaje": "Servicio de primera calidad. Volveré a contratarlos sin duda."
+    }
+  ]
+}

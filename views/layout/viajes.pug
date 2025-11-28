@@ -1,5 +1,5 @@
 // Título centrado con margen inferior (mb-5) para la sección de viajes
-h2.text-center.mb-5 Productos destacados 
+h2.text-center.mb-5 Productos destacados
 
 // Fila de Bootstrap que contendrá las tarjetas de los viajes
 .row.proximos-viajes
@@ -10,20 +10,23 @@ h2.text-center.mb-5 Productos destacados
     // Cada tarjeta ocupa 6 columnas en md y 4 columnas en lg, con margen inferior
     div.col-md-6.col-lg-4.mb-4
 
-      // Tarjeta Bootstrap
-      .card
+      // Tarjeta Bootstrap con altura fija
+      .card.h-100.d-flex.flex-column
 
-        // Imagen en la parte superior de la tarjeta. Se arma la ruta dinámicamente.
-        img.card-img-top(src=`img/${viaje.imagen}.jpg`)
+        // Imagen en la parte superior de la tarjeta con altura fija
+        img.card-img-top(
+          src=`img/${viaje.imagen}.jpg`,
+          style="height: 200px; object-fit: cover;"
+        )
 
         // Cuerpo de la tarjeta donde se muestra la información
-        .card-body
+        .card-body.d-flex.flex-column
 
           // Título del viaje
-          h2= viaje.titulo
+          h2.card-title= viaje.titulo
 
           // Primer párrafo: muestra garantía
-          p
+          p.card-text
             svg.icon.icon-tabler.icon-tabler-calendar-event(
               xmlns='http://www.w3.org/2000/svg',
               width='44',
@@ -46,7 +49,7 @@ h2.text-center.mb-5 Productos destacados
             |  #{viaje.garantia}
 
           // Segundo párrafo: muestra el precio con ícono de etiqueta
-          p
+          p.card-text
             svg.icon.icon-tabler.icon-tabler-tag(
               xmlns='http://www.w3.org/2000/svg',
               width='44',
@@ -63,10 +66,11 @@ h2.text-center.mb-5 Productos destacados
               circle(cx='9', cy='9', r='2')
 
             // Muestra el precio del viaje
-            |  #{viaje.precio} Cop
+            |  #{viaje.precio} Usd
 
           // Tercer párrafo: muestra una parte de la descripción (los primeros 100 caracteres)
-          p= viaje.descripcion.substr(0, 100)
+          p.card-text.flex-grow-1= viaje.descripcion.substr(0, 100) + '...'
 
           // Botón para ir al detalle del viaje, usando su 'slug' como parte de la ruta
-          a(href=`viajes/${viaje.slug}`, class="btn btn-success btn-block") Más Información
+          .mt-auto
+            a(href=`viajes/${viaje.slug}`, class="btn btn-success btn-block") Más Información

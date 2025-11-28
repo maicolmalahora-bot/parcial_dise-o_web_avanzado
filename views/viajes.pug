@@ -17,20 +17,23 @@ block contenido
                 // Cada viaje ocupa 6 columnas en md y 4 en lg (responsive)
                 .col-md-6.col-lg-4.mb-4
 
-                    // Tarjeta Bootstrap
-                    .card
+                    // Tarjeta Bootstrap con altura fija
+                    .card.h-100.d-flex.flex-column
 
-                        // Imagen superior de la tarjeta
-                        img.card-img-top(src=`img/${viaje.imagen}.jpg`)
+                        // Imagen superior de la tarjeta con altura fija
+                        img.card-img-top(
+                            src=`img/${viaje.imagen}.jpg`,
+                            style="height: 200px; object-fit: cover;"
+                        )
 
-                        // Cuerpo de la tarjeta
-                        .card-body
+                        // Cuerpo de la tarjeta con flexbox
+                        .card-body.d-flex.flex-column
 
                             // Título del viaje
-                            h2= viaje.titulo
+                            h2.card-title= viaje.titulo
 
                             // Párrafo con ícono de calendario y fechas
-                            p
+                            p.card-text
                                 svg.icon.icon-tabler.icon-tabler-calendar-event(
                                     xmlns='http://www.w3.org/2000/svg',
                                     width='40',
@@ -53,7 +56,7 @@ block contenido
                                 | #{viaje.garantia}
 
                             // Párrafo con ícono de usuarios y cupos disponibles
-                            p
+                            p.card-text
                                 svg.icon.icon-tabler.icon-tabler-package(
                                     xmlns='http://www.w3.org/2000/svg'
                                     width='40'
@@ -76,7 +79,8 @@ block contenido
                                 | #{viaje.disponibles} Disponibles
 
                             // Descripción acortada del viaje
-                            p= viaje.descripcion.substr(0, 100) + '...'
+                            p.card-text.flex-grow-1= viaje.descripcion.substr(0, 100) + '...'
 
                             // Botón para ver más detalles del viaje
-                            a(href=`viajes/${viaje.slug}`, class="btn btn-success btn-block") Más Información
+                            .mt-auto
+                                a(href=`viajes/${viaje.slug}`, class="btn btn-success btn-block") Más Información
